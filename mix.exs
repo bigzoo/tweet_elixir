@@ -14,13 +14,16 @@ defmodule PluralsightTweet.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      extra_applications: [:logger],
+      extra_applications: [:logger, :quantum],
       mod: {PluralsightTweet.Application, []}
     ]
   end
 
   # Run "mix help deps" to learn about dependencies.
   defp deps do
-    [{:credo, "~> 1.2", only: [:dev, :test], runtime: false}]
+    [
+      {:credo, "~> 1.2", only: [:dev, :test], runtime: false},
+      {:quantum, "~> 1.8"}
+    ]
   end
 end
