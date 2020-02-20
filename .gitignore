@@ -23,4 +23,4 @@ erl_crash.dump
 pluralsight_tweet-*.tar
 
 # Editor/ide files
-.idea/
+.idea
